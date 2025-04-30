@@ -1,0 +1,7 @@
+{
+    "project_name": "My Docker Project",
+    "project_slug": "my_docker_project",
+    "description": "A short description of the project.",
+    "author_name": "Your Name",
+    "python_version": "3.11"
+  }
