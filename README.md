@@ -1,3 +1,5 @@
+# Cookiecutter docker template
+
 In the context of a code repository, “cookie cutters” refer to project templates — standardized starting points used to generate new projects with a predefined structure, configuration, and boilerplate code.
 
 This term typically comes from the Python project cookiecutter, a command-line utility that lets you create projects from templates. The idea is like a “cookie cutter” for code: you stamp out consistent project setups quickly.
