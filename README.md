@@ -61,13 +61,18 @@ docker run -it your_project_slug
 
 ## Project Structure
 ```markdown
-your_project_slug/
-├── .dockerignore
+my-docker-app/
 ├── Dockerfile
+├── docker-compose.yml
+├── pyproject.toml
+├── ruff.toml
+├── .env
 ├── README.md
-├── app/
-│   └── main.py
-└── requirements.txt
+├── src/
+│   └── my_app/
+│       └── main.py
+├── tests/
+│   └── test_main.py
 ```
 
 - app/main.py: Entry point of your application
@@ -86,3 +91,6 @@ Feel free to modify the generated files to suit your project’s specific needs.
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your enhancements.
+
+
+
