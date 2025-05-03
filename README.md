@@ -86,8 +86,3 @@ Feel free to modify the generated files to suit your project’s specific needs.
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your enhancements.
-
-## License
-This project is licensed under the MIT License.
-
-
