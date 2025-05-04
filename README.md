@@ -62,23 +62,18 @@ docker run -it your_project_slug
 ## Project Structure
 ```markdown
 my-docker-app/
-├── Dockerfile
-├── docker-compose.yml
-├── pyproject.toml
-├── ruff.toml
-├── .env
-├── README.md
+├── Dockerfile               # Defines the steps to build the Docker image
+├── docker-compose.yml       # Configures multi-container Docker applications
+├── pyproject.toml           # Declares Python project metadata and dependencies
+├── ruff.toml                # Configuration for the Ruff linter
+├── .env                     # Environment variables used during runtime
+├── README.md                # Project documentation and usage instructions
 ├── src/
 │   └── my_app/
-│       └── main.py
+│       └── main.py          # Application entry point
 ├── tests/
-│   └── test_main.py
+│   └── test_main.py         # Unit tests for the application
 ```
-
-- app/main.py: Entry point of your application
-- requirements.txt: Python dependencies
-- Dockerfile: Instructions to build the Docker image
-- .dockerignore: Specifies files and directories to ignore when building the image
 
 
 ## Customization
