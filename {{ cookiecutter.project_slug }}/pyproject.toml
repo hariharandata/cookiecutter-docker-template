@@ -3,3 +3,9 @@ name = "{{ cookiecutter.project_slug }}"
 version = "0.1.0"
 description = "{{ cookiecutter.description }}"
 authors = ["{{ cookiecutter.author_name }}"]
+
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I"] # Example rule sets
+# Add other configurations as needed
