@@ -9,3 +9,9 @@ authors = ["{{ cookiecutter.author_name }}"]
 line-length = 100
 select = ["E", "F", "W", "I"] # Example rule sets
 # Add other configurations as needed
+
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pytest = "^8.3.4"
+ruff = "^0.4.4" # Using a recent version of Ruff

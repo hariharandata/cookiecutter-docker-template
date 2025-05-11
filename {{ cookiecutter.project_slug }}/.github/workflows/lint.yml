@@ -22,22 +22,23 @@ jobs:
         with:
           python-version: '3.10' # Specify your desired Python version
 
+      - name: Install Poetry
+        run: pipx install poetry
+
       - name: Install dependencies
-        run: |
-          pip install ruff pylint
-          # If you have other dependencies needed for linting (e.g., plugins for ruff or pylint)
-          # Or if your linters need to import your project code to work correctly:
-          # pip install -e . # If your pyproject.toml is set up for editable installs
-          # pip install -r requirements.txt # If you use requirements.txt
+        run: poetry install
 
       - name: Run Ruff Linter
-        run: ruff check . --fix
+        run: poetry run ruff check . --fix
 
       # Optional: Add ruff format check if you want to enforce formatting
-      # - name: Run Ruff Formatter Check
-      #   run: ruff format --check .
+      - name: Run Ruff Formatter Check
+        run: poetry run ruff format --check .
 
-      - name: Run Pylint
-        # Adjust the path if your source code is not in the root or a standard src directory
-        # You can also create a .pylintrc file to configure Pylint's behavior
-        run: pylint $(git ls-files '*.py')
+      # - name: Run Pylint
+      #   # Adjust the path if your source code is not in the root or a standard src directory
+      #   # You can also create a .pylintrc file to configure Pylint's behavior
+      #   run: poetry run pylint $(git ls-files '*.py')
+
+      - name: Run the pytest
+        run: poetry run pytest
